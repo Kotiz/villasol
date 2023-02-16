@@ -1,0 +1,43 @@
+<template>
+  <div
+    class="modal fade video-modal"
+    id="videoModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="videoModalTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <main class="main-body modal-content clearfix">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <p>
+          <iframe
+            v-if="{}"
+            :src="`https://www.youtube.com/embed/${videoId}`"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </p>
+      </main>
+      <!-- /.main-body -->
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "ContactModal",
+  props: {
+    videoId: String,
+  },
+};
+</script>
