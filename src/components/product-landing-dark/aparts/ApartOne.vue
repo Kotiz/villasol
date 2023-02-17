@@ -75,7 +75,7 @@
   import { Swiper, SwiperSlide } from "swiper/vue";
   import { Navigation } from "swiper";
   import { onMounted } from "vue";
-  import axios from "@/tools/axios";
+  import axios from "axios";
   
   export default {
     name: "AboutUs",
