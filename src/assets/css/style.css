@@ -9872,7 +9872,7 @@ body .theme-btn-fourteen:hover {
   opacity: 0.32;
   transform: rotate(-180deg);
   z-index: -1;
-  animation: animation1 4.3s infinite ease-in-out alternate-reverse;
+  animation: animation1 3.3s infinite ease-in-out alternate-reverse;
 }
 
 @keyframes animation1 {
@@ -9880,7 +9880,7 @@ body .theme-btn-fourteen:hover {
 opacity: 0.32;
   }
   to {
-opacity: 0.62;
+opacity: 0.72;
   }
 }
 .client-feedback-slider-five:after {
@@ -9889,11 +9889,11 @@ opacity: 0.62;
   width: 1016px;
   height: 1016px;
   border-radius: 50%;
-  top: 19%;
-  left: 15%;
+  top: 15%;
+  left: 20%;
   background: rgba(255, 4, 64, 0.12);
-  filter: blur(5px);
-  opacity: 0.32;
+  filter: blur(25px);
+  /* opacity: 0.32; */
   transform: rotate(-180deg);
   z-index: -2;
   animation: animation2 5.3s infinite ease-in-out alternate-reverse;
@@ -9902,10 +9902,10 @@ opacity: 0.62;
 
 @keyframes animation2 {
   from {
-opacity: 0.12;
+opacity: 0.02;
   }
   to {
-opacity: .42;
+opacity: 0.52;
   }
 }
 .clientSliderFive {
