@@ -74,6 +74,8 @@
   <script>
   import { Swiper, SwiperSlide } from "swiper/vue";
   import { Navigation } from "swiper";
+  import { onMounted } from "vue";
+  import axios from "@/tools/axios";
   
   export default {
     name: "AboutUs",
@@ -105,5 +107,10 @@
       };
     },
   };
+  onMounted(() => {
+    axios.get('http://localhost:1337/api/apartments').then((response) => {
+      console.log(response.data.data);
+    })
+  });
   </script>
   
