@@ -38,6 +38,7 @@ export default {
       onMounted(() => {
           console.log('dzialalala.l');
           axios.get('http://localhost:1337/api/apartments').then((response) => {
+            this.apartment = response.data.data;
               console.log('eeeee', response.data.data);
           })
 
