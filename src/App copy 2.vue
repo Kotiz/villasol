@@ -1,5 +1,5 @@
-<template class="main-page-wrapper font-gordita dark-style lg-container">
-    <container>
+<template>
+  <container>
      <div class="main-page-wrapper font-gordita dark-style lg-container overflow-hidden">
      <HeaderSix :dark="true" />
      <RouterView/>
@@ -13,7 +13,7 @@
      <ContactStyle />
      </div>
    </container>
-</template>
+ </template>
 
 <script lang="ts">
 import axios from 'axios';
@@ -23,7 +23,6 @@ import AboutUs from '../src/components/product-landing-dark/AboutUs.vue';
 import CloseToUs from '../src/components/product-landing-dark/CloseToUs.vue';
 import ContactStyle from './components/product-landing-dark/ContactStyle.vue';
 import OurFacilites from './components/product-landing-dark/OurFacilites.vue';
-
 
 export default {
   components: {
@@ -38,6 +37,7 @@ export default {
       onMounted(() => {
           console.log('dzialalala.l');
           axios.get('http://localhost:1337/api/apartments').then((response) => {
+            this.apartments = response.data.data;
               console.log('eeeee', response.data.data);
           })
 
