@@ -1,7 +1,6 @@
 // import { generateFakeData, Item } from "@/models/item.model";
 
 import { defineStore } from "pinia";
-// import axios from "@/plugins/axios"
 import axios from "axios"
 
 export type RootState = {
