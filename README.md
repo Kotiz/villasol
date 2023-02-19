@@ -1,4 +1,4 @@
-# deski
+# Villa Sol website
 
 ## Project setup
 ```
