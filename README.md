@@ -1,4 +1,4 @@
-# Villa Sol Website
+# Villa Sol Website - Vue3 - Axios - Pinia - Strapi
 
 ## Project setup
 ```
