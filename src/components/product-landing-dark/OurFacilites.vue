@@ -13,7 +13,7 @@
 
         <div class="row justify-content-center pt-30 md-pt-20">
           <div
-            v-for="item in facilitesData"
+            v-for="item in facilitesData.data"
             :key="item.id"
             class="col-lg-3 col-md-6"
           >
@@ -35,43 +35,51 @@
       src="../../assets/images/shape/151.svg"
       alt=""
       class="shapes shape-one"
-    /> -->
+    /> --> {{ facilitesData.hover_text }}
   </div>
 </template>
 
 <script>
+import { useOurFacilitieStore } from '@/store/ourFacilitiesStore'
 export default {
   name: "OurFacilites",
   data() {
     return {
-      facilitesData: [
-        {
-          id: 1,
-          icon: require(`@/assets/images/icons/scooter.svg`),
-          hover_text: "Do dyspozycji gości dwie hulajnogi elektryczne ",
-        },
-        {
-          id: 2,
-          icon: require(`@/assets/images/icons/emotor.svg`),
-          hover_text: "Do dyspozycji gości dwa skutery elektryczne",
-        },
-        {
-          id: 3,
-          icon: require(`@/assets/images/icons/ecar.svg`),
-          hover_text: "Ładowarka do aut elektrycznych",
-        },
-        {
-          id: 4,
-          icon: require(`@/assets/images/icons/pralka.svg`),
-          hover_text: "W każdym pokoju znajduje się mała pralka",
-        },
-        {
-          id: 5,
-          icon: require(`@/assets/images/icons/kawa.svg`),
-          hover_text: "W każdym pokoju mały ekspress kapsułkowy",
-        },
-      ],
+      // facilitesData: [
+      //   {
+      //     id: 1,
+      //     icon: require(`@/assets/images/icons/scooter.svg`),
+      //     hover_text: "Do dyspozycji gości dwie hulajnogi elektryczne ",
+      //   },
+      //   {
+      //     id: 2,
+      //     icon: require(`@/assets/images/icons/emotor.svg`),
+      //     hover_text: "Do dyspozycji gości dwa skutery elektryczne",
+      //   },
+      //   {
+      //     id: 3,
+      //     icon: require(`@/assets/images/icons/ecar.svg`),
+      //     hover_text: "Ładowarka do aut elektrycznych",
+      //   },
+      //   {
+      //     id: 4,
+      //     icon: require(`@/assets/images/icons/pralka.svg`),
+      //     hover_text: "W każdym pokoju znajduje się mała pralka",
+      //   },
+      //   {
+      //     id: 5,
+      //     icon: require(`@/assets/images/icons/kawa.svg`),
+      //     hover_text: "W każdym pokoju mały ekspress kapsułkowy",
+      //   },
+      // ],
     };
   },
+  setup() {
+    const facilitesData = useOurFacilitieStore;
+    console.log(facilitesData);
+    return {
+      facilitesData,
+    }
+  }
 };
 </script>

@@ -34,8 +34,7 @@ export default defineComponent({
     const apartments = ref([]);
     onMounted(async () => {
       axios.get("http://localhost:1337/api/apartments").then((response) => {
-        apartments.value = response.data.data;
-      });
+        apartments.value = response.data.data; });
     });
     return {
       apartments,

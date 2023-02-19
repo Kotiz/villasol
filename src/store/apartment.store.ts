@@ -18,7 +18,7 @@ export const usePayoutStore = defineStore({
 
         async retrieveApartments() {
             try {
-                const data = await axios.get(`/api/apartaments`)
+                const data = await axios.get(`http://localhost:1337/api/apartments`)
                 console.log('data', data);
                 // this.users = data.data
             }
