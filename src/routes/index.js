@@ -14,7 +14,7 @@ const routes = [
         name: 'ProductLandingDark',
         component: ProductLandingDark,
         meta: {
-            title: 'Home view Villa Sol',
+            title: 'Villa Sol - Oświęcim - Apartaments',
         },
     },
     {
@@ -22,7 +22,7 @@ const routes = [
         name: 'ApartOne',
         component: Apart1,
         meta: {
-            title: 'Villa Sol - Apartament 1',
+            title: 'Villa Sol - Oświęcim - Apartaments',
         },
     },
     {
@@ -30,7 +30,7 @@ const routes = [
         name: 'ApartTwo',
         component: Apart2,
         meta: {
-            title: 'Blog V2 || Deski-Saas & Software Vue Template',
+            title: 'Villa Sol - Oświęcim - Apartaments',
         },
     },
     {
@@ -38,7 +38,7 @@ const routes = [
         name: 'ApartThree',
         component: Apart3,
         meta: {
-            title: 'Blog V3 || Deski-Saas & Software Vue Template',
+            title: 'Villa Sol - Oświęcim - Apartaments',
         },
     },
     {
@@ -46,7 +46,7 @@ const routes = [
         name: 'ApartFour',
         component: Apart4,
         meta: {
-            title: 'Blog V4 || Deski-Saas & Software Vue Template',
+            title: 'Villa Sol - Oświęcim - Apartaments',
         },
     },
     {
@@ -54,7 +54,7 @@ const routes = [
         name: 'ApartFive',
         component: Apart5,
         meta: {
-            title: 'Blog V4 || Deski-Saas & Software Vue Template',
+            title: 'Villa Sol - Oświęcim - Apartaments',
         },
     },
     {
@@ -62,7 +62,7 @@ const routes = [
         name: 'NotFound',
         component: NotFound,
         meta: {
-            title: 'NotFound || Deski-Saas & Software Vue Template',
+            title: 'NotFound || Villa Sol - Oświęcim - Apartaments',
         },
     },
     {
@@ -70,7 +70,7 @@ const routes = [
         name: 'NotFound',
         component: NotFound,
         meta: {
-            title: 'NotFound || Deski-Saas & Software Vue Template',
+            title: 'NotFound || Villa Sol - Oświęcim - Apartaments',
         },
     },
    

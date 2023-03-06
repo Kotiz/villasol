@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <!-- <div>
     <h3>Wpis z wykorzystaniem FOR</h3>
     <div v-for="apartment in apartments" :key="apartment.id">
       <div v-if="apartment.id===3">
@@ -7,7 +7,7 @@
         <p>{{ apartment.attributes.description }}</p>
       </div>      
     </div>
-  </div>
+  </div> -->
   <container>
     <div class="main-page-wrapper font-gordita dark-style lg-container overflow-hidden">
       <HeaderSix :dark="true" />

@@ -10,7 +10,7 @@ export const useAboutUsStrapi = defineStore('AboutUsStrapi',{
     actions: {
         async retrieveAboutUs() {
             try {
-                const data = await axios.get(`http://localhost:1337/api/about-uses/`)
+                const data = await axios.get(`http://localhost:1337/api/about-us-single`)
                 console.log('data', data);
                 this.data = data.data
             }

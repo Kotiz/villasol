@@ -1,5 +1,5 @@
 <template>
-  <div class="fancy-feature-twelve pt-100 md-pt-50 "  id="Facilites">
+  <div class="fancy-feature-twelve pt-10 md-pt-50 "  id="Facilites">
     <div class="bg-wrapper">
       <div class="container">
         <div class="row">
