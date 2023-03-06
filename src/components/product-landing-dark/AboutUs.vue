@@ -24,6 +24,7 @@
               v-for="(picture, pictureIndex) in useAboutUses.attributes.pictures.data" :key="pictureIndex">
             <p style="text-align:justify">
              a <img :src="'http://localhost:1337' + picture.attributes.url" alt="">AA
+             {{ $t('message') }}
             </p>
           </div>
           </div>
