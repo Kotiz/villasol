@@ -18,7 +18,7 @@
             </p>
           </div> -->
           <div>{{ useAboutUses.attributes.description }}</div>
-          <div> {{ useAboutUses.attributes.pictures.data }}</div>
+          <!-- <div> {{ useAboutUses.attributes.pictures.data }}</div> -->
           <div>
             <div class="clientSliderFive mt-10 md-mt-50 item"
               v-for="(picture, pictureIndex) in useAboutUses.attributes.pictures.data" :key="pictureIndex">
@@ -35,8 +35,8 @@
 
 <script>
 // import { useAboutUsStrapi } from '@/store/aboutUsStrapi'
-import { ref, onMounted } from "vue";
-import axios from "axios"
+// import { ref, onMounted } from "vue";
+// import axios from "axios"
 
 export default {
   name: "AboutUs",
@@ -48,15 +48,15 @@ export default {
   //   };
   // },
   setup() {
-    const useAboutUses = ref([]);
-    console.log("obiekt nr 2",useAboutUses);
-    onMounted(async () => {
-      axios.get("http://localhost:1337/api/apartments/2?populate=*").then((response) => useAboutUses.value = response.data.data);
-        console.log('data axios',useAboutUses);
-    });
-    return {
-      useAboutUses,
-    };
+    // const useAboutUses = ref([]);
+    // console.log("obiekt nr 2",useAboutUses);
+    // onMounted(async () => {
+    //   axios.get("http://localhost:1337/api/apartments/2?populate=*").then((response) => useAboutUses.value = response.data.data);
+    //     console.log('data axios',useAboutUses);
+    // });
+    // return {
+    //   useAboutUses,
+    // };
   },
 };
 </script>

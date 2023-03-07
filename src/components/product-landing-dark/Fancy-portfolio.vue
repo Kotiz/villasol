@@ -2,12 +2,12 @@
   <div class="fancy-portfolio-one pt-180 md-pt-100" id="product">
     <div class="container">
       <div class="title-style-six">
-        <h2>Our <span>Portfolio</span></h2>
+        <h2>Apartament <span> 1</span></h2>
       </div>
       <!-- /.title-style-six -->
     </div>
 
-    <div class="portfolio_slider_three pt-120 md-pt-70">
+    <div v-if="picturesApatmentsOne && picturesApatmentsOne.attributes" class="portfolio_slider_three pt-120 md-pt-70">
       <swiper
         class=""
         ref="mySwiper"
@@ -17,11 +17,11 @@
         :breakpoints="breakpoints"
       >
         <swiper-slide
-          v-for="testimonial in testimonialData"
-          :key="testimonial.id"
+          v-for="(picture, pictureIndex) in picturesApatmentsOne.attributes.pictures.data"
+          :key="pictureIndex.id"
         >
           <div class="item">
-            <div class="img-meta"><img :src="testimonial.img" alt="" /></div>
+            <div class="img-meta"><img :src="'http://localhost:1337' + picture.attributes.url" alt="" /></div>
           </div>
         </swiper-slide>
       </swiper>
@@ -41,6 +41,8 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper";
+import axios from "axios";
+import { ref, onMounted } from "vue";
 
 export default {
   name: "FancyPortfolio",
@@ -82,8 +84,14 @@ export default {
     };
   },
   setup() {
+    const picturesApatmentsOne = ref([]);
+    onMounted(async () => {
+      axios.get("http://localhost:1337/api/apartments/1?populate=*").then((response) => picturesApatmentsOne.value = response.data.data);
+      console.log('data apart1 Carusell', picturesApatmentsOne);
+    });
     return {
       modules: [Navigation],
+      picturesApatmentsOne,
     };
   },
 };

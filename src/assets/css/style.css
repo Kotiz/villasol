@@ -9796,15 +9796,18 @@ body .theme-btn-fourteen:hover {
   z-index: 1;
 }
 .fancy-portfolio-one .img-meta {
-  border-radius: 20px;
+  border-radius: 30px;
   overflow: hidden;
   margin: 0 20px;
+  height: auto;
+  width: auto;
+  /* object-fit: cover; */
 }
 .fancy-portfolio-one .img-meta img {
   margin: 0 auto;
 }
 .portfolio_slider_three {
-  max-width: 1800px;
+  /* max-width: 1800px; */
   margin: 0 auto;
   position: relative;
 }
