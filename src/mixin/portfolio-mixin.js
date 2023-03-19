@@ -6,7 +6,7 @@ export default {
                 id: 24,
                 img: require(`@/assets/images/photos/dworzec.png`),
                 title:'ok 300 metrów od apartamentu / 3 min pieszo',
-                subtitle:'Dworzec kolejow i autobusowy',
+                subtitle:'Dworzec kolejowy i autobusowy',
             },
             {
                 id: 24,

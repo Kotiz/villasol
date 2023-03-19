@@ -3,7 +3,7 @@
     <div class="main-page-wrapper font-gordita dark-style lg-container overflow-hidden">
       <HeaderSix :dark="true" />
       <RouterView/>
-      <FancyPortfolio />
+      <!-- <FancyPortfolio /> -->
       <AboutUs />
       <OurFacilites />
       <CloseToUs />
@@ -20,7 +20,7 @@ import AboutUs from '../src/components/product-landing-dark/AboutUs.vue';
 import CloseToUs from '../src/components/product-landing-dark/CloseToUs.vue';
 import ContactStyle from './components/product-landing-dark/ContactStyle.vue';
 import OurFacilites from './components/product-landing-dark/OurFacilites.vue';
-import FancyPortfolio from "./components/product-landing-dark/Fancy-portfolio.vue";
+// import FancyPortfolio from "./components/product-landing-dark/Fancy-portfolio.vue";
 
 export default defineComponent({
   setup() {
@@ -31,7 +31,7 @@ export default defineComponent({
     CloseToUs,
     ContactStyle,
     OurFacilites,
-    FancyPortfolio
+    // FancyPortfolio
 },
 });
 </script>

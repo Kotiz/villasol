@@ -410,8 +410,11 @@ h6 {
   position: absolute;
   z-index: -1;
 }
-.dark-style {
-  background: #4e4d4d;
+.dark-style { /* - Villa background color- #4e4d4d */
+  /* background: #1b1b1b;  */
+  background: #222831;
+  
+  
   color: #afafaf;
 }
 .dark-style .h1,
@@ -801,7 +804,7 @@ h6 {
 .title-style-fourteen .upper-title {
   text-transform: uppercase;
   font-size: 14px;
-  color: #000;
+  color: #fbc707;
   letter-spacing: 2px;
   padding-bottom: 10px;
 }
@@ -3396,13 +3399,13 @@ body .theme-btn-fourteen:hover {
 }
 .contact-us-light .address-info .title {
   font-size: 18px;
-  color: #9e9e9e;
+  color: #beb9b9;
   padding: 30px 0 5px;
 }
 .contact-us-light .address-info p {
   font-size: 24px;
   line-height: 1.45em;
-  color: rgb(43, 42, 42);
+  color: rgb(136, 133, 133);
 }
 .contact-us-light .address-info ul li a {
   font-size: 22px;
@@ -9335,7 +9338,8 @@ body .theme-btn-fourteen:hover {
   background: linear-gradient(10.6deg, #f2a530 2.93%, #f57c35 99.47%);
 }
 .dark-style .theme-main-menu.sticky-menu.fixed { /* -VILLA_SOL- Nav menu color */
-  background: #656564;
+  /* background: #656564; */
+  background: #CA3E47 ;
 }
 .dark-style .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.6);
@@ -9968,6 +9972,45 @@ opacity: 0.52;
   top: 97%;
   right: 12%;
 }
+.client-feedback-slider-five .carousel-inner {
+  background: rgba(243, 247, 248, 0.1);
+  box-shadow: inset 0px 2px 2px rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin-top: 85px;
+  display: block;
+}
+.client-feedback-slider-five .carouselImg {
+max-width: 100%;
+height: auto;
+}
+/* .client-feedback-slider-five .carousel-item {
+  opacity: 0.5;
+  transition-duration: 0.6s;
+  transition-property: opacity;
+}
+.client-feedback-slider-five .carousel-item.active,
+.client-feedback-slider-five .carousel-item-next.carousel-item-left,
+.client-feedback-slider-five .carousel-item-prev.carousel-item-right {
+opacity: 1;
+}
+client-feedback-slider-five .active.carousel-item-left,
+client-feedback-slider-five .active.carousel-item-right {
+opacity: 0;
+} */
+/* .client-feedback-slider-five .carousel-item-next,
+.client-feedback-slider-five .carousel-item-prev,
+.client-feedback-slider-five .carousel-item.active,
+.client-feedback-slider-five .active.carousel-item-left,
+.client-feedback-slider-five .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+} */
+/* .client-feedback-slider-five .carousel-inner {
+  top: -57px;
+  right: -60px;
+  z-index: 1;
+} */
 /*------------------ Pricing Section Five ---------------*/
 .pricing-section-five {
   position: relative;
@@ -14375,7 +14418,7 @@ opacity: 0.52;
 .block-style-thirtySix .tag-line {
   font-size: 22px;
   line-height: 1.72em;
-  color: #000;
+  color: #9b9b9b;
   margin: 30px 0 40px;
 }
 .block-style-thirtySix .list-item li {

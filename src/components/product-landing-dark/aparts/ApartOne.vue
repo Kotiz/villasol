@@ -3,35 +3,44 @@
     <div class="container" >
       <div class="row" >
         <div class="col-xl-7 col-lg-10 col-md-9 m-auto" >
-          <div class="title-style-six text-center mt-25" >
-            <h2>Apartament <span> 1 </span></h2>
-          </div>
+            <HeaderText :nameOfAparts="titleHeader"
+                        :textNumberOfApart="textNumberApart"
+            />
           <!-- /.title-style-six -->
         </div>
       </div>
-  <div v-if="useAboutUses && useAboutUses.attributes " class="row">
-    <div class="col-xl-7 col-lg-10 m-auto">
-          <!-- <div class="clientSliderFive mt-10 md-mt-50 item"
-            v-for="(useAboutUs, index) in useAboutUses" :key="index">
-            <p style="text-align:justify">
-              {{ useAboutUs.attributes.description }}
-            </p>
-          </div> -->
-      <div>{{ useAboutUses.attributes.description }}</div>
-          <!-- <div> {{ useAboutUses.attributes.pictures.data }}</div> -->
-      <div>
-        <div class="clientSliderFive mt-10 md-mt-50 item"
-          v-for="(picture, pictureIndex) in useAboutUses.attributes.pictures.data" :key="pictureIndex">
-          <p style="text-align:justify"> <img :src="'http://localhost:1337' + picture.attributes.url" alt="">
-          </p>
-        </div>
-      </div>
+  <div v-if="apartmentOne && apartmentOne.attributes " class="row">
+    <div class="col-xl-7 col-lg-10 m-auto pt-70">
+      <div>{{ apartmentOne.attributes.description }}</div>
     </div>
   </div>
 
             <!-- Carusell  -->
-  
-
+<div v-if="apartmentOne && apartmentOne.attributes" id="carouselExampleControls" class="carousel slide col-xl-7 col-lg-10 m-auto " data-bs-ride="carousel">
+  <div class="carousel-inner ">
+    <div v-for="(picture, pictureIndex) in apartmentOne.attributes.pictures.data" 
+      :key="pictureIndex" 
+      :class="pictureIndex === 0 ? 'carousel-item active' : 'carousel-item'"
+      >
+      <img 
+        :src="'http://localhost:1337' + picture.attributes.url" 
+        class="d-block w-100" 
+        :key="pictureIndex" 
+        alt="..." 
+        style="border-radius: 8px; "
+      >
+  </div>
+</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<CarouselApartments />
 
   </div>
       <!-- <div class="circle-area">
@@ -40,11 +49,11 @@
   </div>
 </template>
   
-  <script>
-  // import { Swiper, SwiperSlide } from "swiper/vue";
-  import { Navigation } from "swiper";
-  import { ref, onMounted } from "vue";
-  import axios from "axios";
+<script>
+import { ref, onMounted } from "vue";
+import axios from "axios";
+import HeaderText from "@/components/common/TextHeaders/HeaderTextOfComponent.vue";
+import CarouselApartments from "@/components/common/carouselApartments.vue";
   
   export default {
     name: "AboutUs",
@@ -67,21 +76,24 @@
     //   };
     // },
     components: {
-      // Swiper,
-      // SwiperSlide,
-    },
+    HeaderText,
+    CarouselApartments,
+},
     setup() {
-      const useAboutUses = ref([]);
+      const titleHeader = 'Apartament';
+      const textNumberApart = 'ONE';
+      const apartmentOne = ref([]);
       onMounted(async () => {
-        axios.get("http://localhost:1337/api/apartments/1?populate=*").then((response) => useAboutUses.value = response.data.data);
-        console.log('data apart1 axios');
+        axios.get("http://localhost:1337/api/apartments/1?populate=*").then((response) => apartmentOne.value = response.data.data);
+        console.log('data apart1 axios',apartmentOne);
     });
       return {
-        modules: [Navigation],
-        useAboutUses,
+        apartmentOne,
+        titleHeader,
+        textNumberApart,
+
       };
     },
   };
-
   </script>
   

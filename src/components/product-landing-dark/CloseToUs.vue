@@ -33,7 +33,7 @@
             ref="mySwiper"
             :modules="modules"
             :loop="true"
-            :navigation="{ nextEl: '.prev_case2', prevEl: '.next_case2' }"
+            :navigation="{ nextEl:'.next_case2' , prevEl:'.prev_case2' }"
             :breakpoints="breakpoints"
           >
             <swiper-slide v-for="item in portfolioItems" :key="item.id">

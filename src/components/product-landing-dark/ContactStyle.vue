@@ -5,21 +5,21 @@
         <div class="col-md-4 col-sm-6">
           <div class="address-info">
             <div class="icon"><img src="../../assets/images/icon/44.svg" alt=""></div>
-            <div class="title">Location</div>
+            <div class="title">Nasza lokalizacja</div>
             <p class="font-rubik">Villa Sol<br>ul.Garbarska 20<br> 32-600 Oświęcim </p>
           </div> <!-- /.address-info -->
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="address-info">
             <div class="icon"><img src="../../assets/images/icon/45.svg" alt=""></div>
-            <div class="title">Contact</div>
+            <div class="title">Kontakt</div>
             <p class="font-rubik">villasoloswiecim@gmail.com <br>+48 604 054 572</p>
           </div> <!-- /.address-info -->
         </div>
         <div class="col-md-4 col-sm-6 ">
           <div class="address-info">
             <div class="icon"><img src="../../assets/images/icon/46.svg" alt=""></div>
-            <div class="title">Social Media</div>
+            <div class="title">Znajdziesz nas na :</div>
             <p class="font-rubik">Follow on social media</p>
             <ul class="d-flex justify-content-center">
               <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>

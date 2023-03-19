@@ -27,9 +27,6 @@
       <a class="nav-link" href="#AboutUs">O NAS</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#Facilites">UDOGODNIENIA</a>
-    </li>
-    <li class="nav-item">
       <a class="nav-link" href="#CloseToUs">W POBLIŻU NAS</a>
     </li>
     <li class="nav-item">
