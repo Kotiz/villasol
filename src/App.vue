@@ -13,8 +13,6 @@
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
-
-
 import HeaderSix from '../src/components/product-landing-dark/HeaderFour.vue';
 import AboutUs from '../src/components/product-landing-dark/AboutUs.vue';
 import CloseToUs from '../src/components/product-landing-dark/CloseToUs.vue';
