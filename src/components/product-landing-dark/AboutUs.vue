@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <!-- <p>{{ t('hello') }}</p> -->
+      <p>{{ t('hello') }}</p>
     </div>
   </div>
 </template>
@@ -28,15 +28,15 @@
 // import { useAboutUsStrapi } from '@/store/aboutUsStrapi'
 import { ref, onMounted } from "vue";
 import axios from "axios";
-// import { useI18n } from 'vue-i18n'
+import { useI18n } from 'vue-i18n'
 
 export default {
   name: "AboutUs",
   setup() {
-    // const { t } = useI18n({
-    //   inheritLocale: true,
-    //   useScope: 'local'
-    // });
+    const { t } = useI18n({
+      inheritLocale: true,
+      useScope: 'local'
+    });
     const useAboutUses = ref([]);
     console.log("obiekt nr 2",useAboutUses);
     onMounted(async () => {
@@ -44,18 +44,21 @@ export default {
         console.log('data axios',useAboutUses);
     });
     return {
-      useAboutUses,
+      useAboutUses, t,
     };
   },
 };
 </script>
-<!-- <i18n>
+<i18n>
   {
     "en": {
-      "hello": "Hello i18n in SFC!"
+      "hello": "Hello this is english"
+    },
+    "es": {
+      "hello": "eso es espanol"
     },
     "pl": {
-      "hello": "czesc"
+      "hello": "to jest polski"
     }
   }
-</i18n> -->
+</i18n>
