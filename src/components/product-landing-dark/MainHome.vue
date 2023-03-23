@@ -103,25 +103,6 @@ export default {
 };
 </script>
 <style scoped>
-/* .borderIMG {
-  border: 14px outset rgba(250,228,110,0.67);
-border-radius: 33px 33px 0px 24px;
-} */
-/* .borderIMG { */
-    /* padding: 0.4rem 0.4rem; */
-    /* border: 3px solid #b9b7b7; */
-    /* border-radius: 12% 16% 15% 14% / 3% 1% 2% 4%; */
-    /* background: #838282; */
-    /* position: relative; */
-  /* } */
-/* .borderIMG {
-  display: flex;
-    flex-shrink: 0;
-    height: calc(250px + 4vw);
-    width: calc(350px + 4vw);
-    margin: 15px;
-    background-image: linear-gradient(to bottom right, #ff3cac, #562b7c, #2b86c5);
-} */
 .borderIMG{
   border-radius:4% 95% 6% 95% / 95% 4% 92% 5%;
   border: solid rgb(73, 219, 16);
