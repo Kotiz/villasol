@@ -1,3 +1,21 @@
 {
-  "message": "hello i18n !!"
+  "main-home-title": "Zapewniamy profesjonalną obsługę",
+  "header": "Kilka słów o nas",
+  "description": "Serdecznie zapraszamy do naszego nowopowstałego obiektu. Nasza villa oferuje pięć zupełnie niezależnych od siebie apartamentów w zależności od państwa osobistych preferencji. W jednym z naszych dostępnych apartamentów znajduje się również jacuzzi wraz z sauną. Nasz obiekt wyróżnia świetna lokalizacja, położony jest niedaleko dworca PKP przy spokojnej ulicy na osiedlu „Zasole”. Dzięki takiej lokalizacji można na spokojnie przejść się pieszo na oświęcimski rynek czy do muzeum Auschwitz-Birkenau co zajmie nam co najwyżej 15/20 minut. W pobliżu znajdują się sklepy a także przystanki komunikacji miejskiej. Dla gości z dziećmi atrakcją będzie oddalony o około 5 minut drogi pieszo miejski plac zabaw. Gorąco zapraszamy do naszej Villi Sol.",
+  "nav-apartments": "APARTMENTY",
+  "nav-about-us": "O NAS",
+  "nav-near-us": "W POBLIŻU NAS",
+  "nav-contact": "KONTAKT",
+  "close-tu-us-header1": "Co zobaczyć",
+  "close-tu-us-header2": "Blisko naszego apartamentu",
+  "close-tu-us-header3": "Kilka przykładów dla twojej wygody",
+  "switcher-choose": "Select lenguage: ",
+  "contact-form-name": "Imię",
+  "contact-form-lastName": "Nazwisko",
+  "contact-form-mail": "Twój e-mail",
+  "contact-form-message": "Twoja wiadomość",
+  "contact-form-write-message-area": "WYŚLIJ WIADOMOŚĆ",
+  "contact-our-localization": "Nasz adres : ",
+  "contact-mail": "Kontakt :  ",
+  "contact-social": "Znajdziesz nas na : ",
 }

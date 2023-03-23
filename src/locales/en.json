@@ -1,0 +1,25 @@
+{
+  "main-home-title": "We provide professional service",
+  "header": "About us",
+  "description": "We warmly invite you to our newly created facility Villa Sol. Our villa offers five completely independent apartments, depending on your personal preferences. In one of them there are jacuzzi and sauna. The building is located near the railway station, on a quiet street in the Zasola estate. Thanks to the excellent location, you can take a walk to the Oświęcim market square as well as visit the Auschwitz-Birkenau Museum. In the area you can find the shopping mall, shops and public transport stops. For guests with children, the city playground, located about five minutes away on foot will be an attraction. We kindly invite you to use our apartments and all the amenities we offer.",
+  "nav-apartments": "APARTMENTS",
+  "nav-about-us": "ABOUT US",
+  "nav-near-us": "NEAR TO US",
+  "nav-contact": "CONTACT",
+  "close-tu-us-header1": "What can you see",
+  "close-tu-us-header2": "Close to our apartments",
+  "close-tu-us-header3": "Few examples for you ",
+  "switcher-choose": "Wybierz język: ",
+  "contact-form-name": "First name",
+  "contact-form-lastName": "Last name",
+  "contact-form-mail": "Your email",
+  "contact-form-message": "Your message",
+  "contact-form-write-message-area": "SEND MESSAGE", "contact-our-localization": "Our adress : ",
+  "contact-mail": "Contact :  ",
+  "contact-social": "Find us on : ",
+  "arrayJoin": [
+    "line1",
+    "line2",
+    "line3"
+  ],
+}

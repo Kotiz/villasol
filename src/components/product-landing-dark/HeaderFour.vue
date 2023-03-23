@@ -23,10 +23,10 @@
                 <li class="d-sm-flex">
                   <ul class="language-button-group d-flex align-items-center justify-content-center">
                     <li>
-                      <a href="#" class="eng-lang active">PL. </a>
+                      <!-- <a href="#" class="eng-lang active">PL. </a> -->
                     </li>
                     <li>
-                      <a href="#" class="ru-lang">ENG.</a>
+                      <!-- <a href="#" class="ru-lang">ENG.</a> -->
                     </li>
                   </ul>
 
@@ -51,10 +51,11 @@
 <script>
 import NavMenu from './NavMenu.vue';
 
+
 export default {
   name: 'HeaderFour',
   components: {
-    NavMenu
+    NavMenu,
   },
   data() {
     return {

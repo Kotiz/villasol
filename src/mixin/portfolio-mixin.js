@@ -32,6 +32,36 @@ export default {
                 title:'20 minut spacerem',
                 subtitle:'Muzeum Birkenau',
             },
+            {
+                id: 28,
+                img: require(`@/assets/images/photos/energy.png`),
+                title:'15 minut samochodem',
+                subtitle:'Park Rozrywki Energylandia',
+            },
+            {
+                id: 29,
+                img: require(`@/assets/images/photos/rynek.png`),
+                title:'10 minut pieszo',
+                subtitle:'Rynek Główny',
+            },
+            {
+                id: 30,
+                img: require(`@/assets/images/photos/lodowisko.png`),
+                title:'5 minut samochodem',
+                subtitle:'Lodowisko',
+            },
+            {
+                id: 31,
+                img: require(`@/assets/images/photos/skatepark.png`),
+                title:'5 minut samochodem',
+                subtitle:'Skatepark',
+            },
+            {
+                id: 32,
+                img: require(`@/assets/images/photos/korty.png`),
+                title:'5 minut pieszo',
+                subtitle:'Korty tenisowe',
+            },
          ]
       }
   }

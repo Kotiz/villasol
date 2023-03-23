@@ -16,16 +16,15 @@
   </div>
 
             <!-- Carusell  -->
-<div v-if="apartmentOne && apartmentOne.attributes" id="carouselExampleControls" class="carousel slide col-xl-7 col-lg-10 m-auto " data-bs-ride="carousel">
+<div  id="carouselExampleControls" class="carousel slide col-xl-7 col-lg-10 m-auto " data-bs-ride="carousel">
   <div class="carousel-inner ">
-    <div v-for="(picture, pictureIndex) in apartmentOne.attributes.pictures.data" 
+    <div v-for="(picture, pictureIndex) in portfolioItems" 
       :key="pictureIndex" 
       :class="pictureIndex === 0 ? 'carousel-item active' : 'carousel-item'"
       >
       <img 
-        :src="'http://localhost:1337' + picture.attributes.url" 
+        :src="picture.img" 
         class="d-block w-100" 
-        :key="pictureIndex" 
         alt="..." 
         style="border-radius: 8px; "
       >
@@ -40,7 +39,6 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<CarouselApartments />
 
   </div>
       <!-- <div class="circle-area">
@@ -53,7 +51,7 @@
 import { ref, onMounted } from "vue";
 import axios from "axios";
 import HeaderText from "@/components/common/TextHeaders/HeaderTextOfComponent.vue";
-import CarouselApartments from "@/components/common/carouselApartments.vue";
+import apartamentOne from '@/mixin/apartamentOne';
   
   export default {
     name: "AboutUs",
@@ -77,8 +75,8 @@ import CarouselApartments from "@/components/common/carouselApartments.vue";
     // },
     components: {
     HeaderText,
-    CarouselApartments,
 },
+    mixins:[apartamentOne],
     setup() {
       const titleHeader = 'Apartament';
       const textNumberApart = 'ONE';

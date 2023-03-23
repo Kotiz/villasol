@@ -11,7 +11,7 @@
         href="#"
         data-bs-auto-close="outside"
         data-bs-toggle="dropdown"
-        >APARTAMENTY</a
+        >{{ $t("nav-apartments") }}</a
       >
       <ul class="dropdown-menu">
         <li v-for="(menu, index) in blog_menu_data" :key="index">
@@ -24,24 +24,27 @@
     </li>
     <li class="nav-item">
       <!-- <router-link :to="'/AboutUs'" class="nav-link">O NAS</router-link> -->
-      <a class="nav-link" href="#AboutUs">O NAS</a>
+      <a class="nav-link" href="#AboutUs">{{ $t("nav-about-us")}}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#CloseToUs">W POBLIŻU NAS</a>
+      <a class="nav-link" href="#CloseToUs">{{ $t("nav-near-us")}}</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#Contact">KONTAKT</a>
+      <a class="nav-link" href="#Contact">{{  $t("nav-contact") }}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" ><locale-switcher /></a>
     </li>
   </ul>
 </template>
 
 <script>
-// import megaMenus from "./mega-menus.vue";
+import LocaleSwitcher from '../LocaleSwitcher.vue';
 
 export default {
   name: "NavMenu",
   components: {
-    // megaMenus,
+    LocaleSwitcher,
   },
   data() {
     return {

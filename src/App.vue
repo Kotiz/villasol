@@ -5,7 +5,7 @@
       <RouterView/>
       <!-- <FancyPortfolio /> -->
       <AboutUs />
-      <OurFacilites />
+      <!-- <OurFacilites /> -->
       <CloseToUs />
       <ContactStyle />
     </div>
@@ -17,7 +17,7 @@ import HeaderSix from '../src/components/product-landing-dark/HeaderFour.vue';
 import AboutUs from '../src/components/product-landing-dark/AboutUs.vue';
 import CloseToUs from '../src/components/product-landing-dark/CloseToUs.vue';
 import ContactStyle from './components/product-landing-dark/ContactStyle.vue';
-import OurFacilites from './components/product-landing-dark/OurFacilites.vue';
+// import OurFacilites from './components/product-landing-dark/OurFacilites.vue';
 // import FancyPortfolio from "./components/product-landing-dark/Fancy-portfolio.vue";
 
 export default defineComponent({
@@ -28,7 +28,7 @@ export default defineComponent({
     AboutUs,
     CloseToUs,
     ContactStyle,
-    OurFacilites,
+    // OurFacilites,
     // FancyPortfolio
 },
 });

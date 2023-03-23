@@ -5,21 +5,21 @@
         <div class="col-md-4 col-sm-6">
           <div class="address-info">
             <div class="icon"><img src="../../assets/images/icon/44.svg" alt=""></div>
-            <div class="title">Nasza lokalizacja</div>
+            <div class="title">{{ $t("contact-our-localization")}}</div>
             <p class="font-rubik">Villa Sol<br>ul.Garbarska 20<br> 32-600 Oświęcim </p>
           </div> <!-- /.address-info -->
         </div>
         <div class="col-md-4 col-sm-6">
           <div class="address-info">
             <div class="icon"><img src="../../assets/images/icon/45.svg" alt=""></div>
-            <div class="title">Kontakt</div>
+            <div class="title">{{ $t("contact-mail")}}</div>
             <p class="font-rubik">villasoloswiecim@gmail.com <br>+48 604 054 572</p>
           </div> <!-- /.address-info -->
         </div>
         <div class="col-md-4 col-sm-6 ">
           <div class="address-info">
             <div class="icon"><img src="../../assets/images/icon/46.svg" alt=""></div>
-            <div class="title">Znajdziesz nas na :</div>
+            <div class="title">{{ $t("contact-social")}}</div>
             <p class="font-rubik">Follow on social media</p>
             <ul class="d-flex justify-content-center">
               <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -34,8 +34,8 @@
           <div class="row controls">
             <div class="col-md-6">
               <div class="input-group-meta form-group mb-35">
-                <label>First Name</label>
-                <input type="text" placeholder="name" name="from_name" :value="inputFieldReset" required="required" 
+                <label>{{ $t("contact-form-name")}}</label>
+                <input type="text" placeholder="" name="from_name" :value="inputFieldReset" required="required" 
                 data-error="Name is required.">
                 <span class="placeholder_icon valid-sign">
                   <img src="../../assets/images/icon/18.svg" alt="">
@@ -45,7 +45,7 @@
             </div>
             <div class="col-md-6">
               <div class="input-group-meta form-group mb-35">
-                <label>Last Name</label>
+                <label>{{ $t("contact-form-lastName")}}</label>
                 <input type="text" placeholder="" name="from_name" required="required" 
                 data-error="Name is required.">
                 <span class="placeholder_icon valid-sign">
@@ -56,7 +56,7 @@
             </div>
             <div class="col-12">
               <div class="input-group-meta form-group mb-35">
-                <label>Your Email</label>
+                <label>{{ $t("contact-form-mail")}}</label>
                 <input type="email" placeholder="" name="user_email" :value="inputFieldReset" required="required"
                   data-error="Valid email is required.">
                 <span class="placeholder_icon valid-sign">
@@ -67,13 +67,15 @@
             </div>
             <div class="col-12">
               <div class="input-group-meta form-group lg mb-35">
-                <label>Your Message</label>
+                <label>{{ $t("contact-form-message")}}</label>
                 <textarea class="text-area" :value="inputFieldReset" placeholder="Write your message here..." name="message" required="required"
                   data-error="Please,leave us a message."></textarea>
                 <div class="help-block with-errors"></div>
               </div>
             </div>
-            <div class="col-12"><button class="theme-btn-one btn-lg" type="submit" name="send">Send Message</button></div>
+            <div class="col-12">
+              <button class="theme-btn-one btn-lg" type="submit" name="send">{{ $t("contact-form-write-message-area")}}</button>
+            </div>
           </div>
         </form>
       </div> <!-- /.form-style-light -->

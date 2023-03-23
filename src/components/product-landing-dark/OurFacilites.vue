@@ -30,18 +30,11 @@
         </div>
       </div>
     </div>
-    <!-- /.bg-wrapper -->
-    <!-- <img
-      src="../../assets/images/shape/151.svg"
-      alt=""
-      class="shapes shape-one"
-    /> --> 
-    <!-- {{ facilitesData.hover_text }} -->
   </div>
 </template>
 
 <script>
-// import { useOurFacilitieStore } from '@/store/ourFacilitiesStore'
+
 export default {
   name: "OurFacilites",
   data() {
@@ -76,11 +69,6 @@ export default {
     };
   },
   setup() {
-    // const facilitesData = useOurFacilitieStore;
-    // console.log(facilitesData);
-    // return {
-    //   facilitesData,
-    // }
   }
 };
 </script>
