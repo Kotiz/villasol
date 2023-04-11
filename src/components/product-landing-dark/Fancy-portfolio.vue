@@ -1,5 +1,5 @@
 <template>
-  <div class="fancy-portfolio-one pt-180 md-pt-100" id="product">
+  <div class="fancy-portfolio-one pt-180 md-pt-100" id="">
     <div class="container">
       <div class="title-style-six">
         <h2>Apartament <span> 1</span></h2>

@@ -1,7 +1,9 @@
 {
   "main-home-title": "Zapewniamy profesjonalną obsługę",
+  "main-home-text-under-logo" : "Apartmenty z klasą",
+  "main-home-textHeader" : "Nasze apartamenty na wynajem, znajdują się 10 minut pieszo od wejścia do Muzeum 'Auschwitz' i 10 minut spacerem od starego rynku w Oświęcimiu. Są bardzo komfortowo wyposażone gdzie w miarę dostępności do mają państwo do dyspozycji elektryczne hulajnogi, rowery, skutery, jaccuzi i saunę. Na parkingu także znajduje się ładowarka do samochodów elektrycznych. ",
   "header": "Kilka słów o nas",
-  "description": "Serdecznie zapraszamy do naszego nowopowstałego obiektu. Nasza villa oferuje pięć zupełnie niezależnych od siebie apartamentów w zależności od państwa osobistych preferencji. W jednym z naszych dostępnych apartamentów znajduje się również jacuzzi wraz z sauną. Nasz obiekt wyróżnia świetna lokalizacja, położony jest niedaleko dworca PKP przy spokojnej ulicy na osiedlu „Zasole”. Dzięki takiej lokalizacji można na spokojnie przejść się pieszo na oświęcimski rynek czy do muzeum Auschwitz-Birkenau co zajmie nam co najwyżej 15/20 minut. W pobliżu znajdują się sklepy a także przystanki komunikacji miejskiej. Dla gości z dziećmi atrakcją będzie oddalony o około 5 minut drogi pieszo miejski plac zabaw. Gorąco zapraszamy do naszej Villi Sol.",
+  "description": "Serdecznie zapraszamy do naszego nowo powstałego obiektu Villa Sol. Nasza villa oferuje pięć,  zupełnie niezależnych od siebie apartamentów, w zależności od Państwa osobistych preferencji. W jednym z nich  znajduje się jacuzzi wraz z sauną. Budynek położony jest niedaleko dworca PKP, przy spokojnej ulicy na Osiedlu Zasole. Dzięki doskonałej lokalizacji można pieszo dostać się na oświęcimski rynek jak również udać się na zwiedzanie Muzeum Auschwitz-Birkenau.  W pobliżu znajdują się galerie handlowe, sklepy a także przystanki komunikacji miejskiej. Dla gości z dziećmi atrakcją będzie oddalony o około pięć minut drogi pieszo miejski plac zabaw. Gorąco zapraszamy do korzystania z naszych apartamentów oraz wszystkich udogodnień, które mamy w ofercie.",
   "nav-apartments": "APARTMENTY",
   "nav-about-us": "O NAS",
   "nav-near-us": "W POBLIŻU NAS",
@@ -18,4 +20,12 @@
   "contact-our-localization": "Nasz adres : ",
   "contact-mail": "Kontakt :  ",
   "contact-social": "Znajdziesz nas na : ",
+  "apartmentOneDescription" : "Nasze apartamenty składają się z łazienki,  sypialni, salonu wraz z aneksem kuchennym, który jest wyposażony między innymi w ekspres do kawy, toster i wszystko co niezbędne do przygotowania rożnego rodzaju posiłków. Każdy z nich posiada bezpłatny dostęp do internetu Wi-Fi, telewizor w salonie i w sypialni. Apartamenty Villa Sol Oświęcim, posiadają także miejsca postojowe na monitorowanym parkingu znajdującym się na terenie posesji. W naszym apartamencie w miarę dostępności możesz wypożyczyć elektryczne hulajnogi, rowery i skutery. Możesz także przyjechać elektrycznym samochodem ponieważ posiadamy na parkingu ładowarkę do samochodów.",
+  "apartamentOneGuestnumber" : "Liczba gości: ",
+  "apartamentOneSize" : "Rozmiar : ",
+  "apartamentOneBedroomQuantity" : "Sypialnia : ",
+  "apartamentOneSofaQuantity" : "Sofa 2-os. : ",
+  "apartamentOneBedQuantity" : "Łożka 1-os : ",
+  "apartamentFacilities" : ["2 tv", "Expres do kawy", "Zmywarka"],
+  "apartamentFacilities" : ["2 telewizory", "Ekspress do kawy", "Zmywarka", "Pralka", "Lodówka","Toster", "Zastawa dla 4 osób", "Czajnik", "Wyposażenie kuchni", "WiFi", "Naczynia", "Ręczniki", "Suszarka do włosów" ],
 }

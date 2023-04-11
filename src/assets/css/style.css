@@ -9338,11 +9338,13 @@ body .theme-btn-fourteen:hover {
   background: linear-gradient(10.6deg, #f2a530 2.93%, #f57c35 99.47%);
 }
 .dark-style .theme-main-menu.sticky-menu.fixed { /* -VILLA_SOL- Nav menu color */
-  /* background: #656564; */
-  background: #CA3E47 ;
+  background: #656564;
+  /* background: #CA3E47 ; */
+  /* background:fixed; */
+  opacity: 0.9;
 }
 .dark-style .navbar-nav .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 1);
 }
 .dark-style .theme-menu-five .navbar-nav .nav-item .nav-link.active {
   color: #fff;

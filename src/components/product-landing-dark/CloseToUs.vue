@@ -1,6 +1,6 @@
 <template>
-  <div class="pt-160 pb-150 md-pt-120 client-feedback-slider-five"   id="CloseToUs" >
-    <div class="fancy-feature-thirtyFive position-relative lg-container">
+  <div class="pt-160 pb-150 md-pt-10 client-feedback-slider-five"   id="CloseToUs" >
+    <!-- <div class="fancy-feature-thirtyFive position-relative lg-container"> -->
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -42,8 +42,8 @@
                   <img :src="item.img" alt="" class="w-100" />
                   <div class="text">
                   <div class="tag">{{item.title}}</div>
-                  <h4>{{item.subtitle}}</h4>
-                  <h4>{{$t('arrayJoin')}}</h4>
+                  <h4>{{$t('STTATION_COSTAM') }}</h4>
+                  <!-- <h4>{{$t('arrayJoin')}}</h4> -->
                 </div>
                 </div>
               </div>
@@ -53,7 +53,7 @@
         <!-- /.portfolio_slider_two -->
       </div>
       <!-- /.slider-wrapper -->
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 

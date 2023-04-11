@@ -52,7 +52,7 @@
 <script>
 import { ref, onMounted } from "vue";
 import axios from "axios";
-import HeaderText from "@/components/common/TextHeaders/HeaderTextOfComponent.vue";
+import HeaderText from "@/components/common/HeaderTextOfComponent.vue";
 import CarouselApartments from "@/components/common/carouselApartments.vue";
   
   export default {

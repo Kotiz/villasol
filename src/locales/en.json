@@ -1,7 +1,9 @@
 {
   "main-home-title": "We provide professional service",
+  "main-home-text-under-logo" : "Luxury Apartments",
+  "main-home-textHeader" : "Our Apartments for rent can be found around 10 minutes from Museum 'Auschwitz' and 10 minutes while taking a walk from Oświęcim market.They are very comfortable and you can also find there electric scooters, bikes , electric motor scooters , jaccuzi, Finnish bath.On the parking lot you can use charger for electric cars. ",
   "header": "About us",
-  "description": "We warmly invite you to our newly created facility Villa Sol. Our villa offers five completely independent apartments, depending on your personal preferences. In one of them there are jacuzzi and sauna. The building is located near the railway station, on a quiet street in the Zasola estate. Thanks to the excellent location, you can take a walk to the Oświęcim market square as well as visit the Auschwitz-Birkenau Museum. In the area you can find the shopping mall, shops and public transport stops. For guests with children, the city playground, located about five minutes away on foot will be an attraction. We kindly invite you to use our apartments and all the amenities we offer.",
+  "description": "We warmly invite you to our newly created facility Villa Sol. Our villa offers five completely independent apartments, depending on your personal preferences. In one of them there are jacuzzi and sauna. The building is located near the railway station, on a quiet street in the Zasola estate. Thanks to the excellent location, you can take a walk to the Oświęcim market square as well as visit the Auschwitz-Birkenau Museum. In the area you can find the shopping mall, shops and public transport stops. For guests with children, the city playground, located about five minutes away on foot will be an attraction. We kindly invite you to use our apartments and all the amenities we offer",
   "nav-apartments": "APARTMENTS",
   "nav-about-us": "ABOUT US",
   "nav-near-us": "NEAR TO US",
@@ -17,9 +19,12 @@
   "contact-form-write-message-area": "SEND MESSAGE", "contact-our-localization": "Our adress : ",
   "contact-mail": "Contact :  ",
   "contact-social": "Find us on : ",
-  "arrayJoin": [
-    "line1",
-    "line2",
-    "line3"
-  ],
+  "apartmentOneDescription" : "Our apartments consist of a bathroom, bedroom and living room with a kitchenette, which is equipped, among others with a coffee machine, toaster and everything necessary to prepare various types of meals. Each apartments has free Wi-Fi internet access, TV in salon and bedroom . Our Villa Sol also provides parking spaces in the monitored parking lot located on the property.",
+  "apartamentOneGuestnumber" : "No. of guests : ",
+  "apartamentOneSize" : "Size : ",
+  "apartamentOneBedroomQuantity" : "Bedroom : ",
+  "apartamentOneSofaQuantity" : "Sofa for 2 p : ",
+  "apartamentOneBedQuantity" : "Sofa for 2 p : ",
+  "apartamentFacilities" : ["2 TV", "Caffe express", "Dishwasher", "Washing machine", "Toaster", "Tableware for 4 people", "Refrigerator", "Water kettle", "Kitchen equipment", "WiFi", "Pots", "Towels", "Hair dryer" ],
+  "STTATION_COSTAM" : "fdfsfdsf"
 }

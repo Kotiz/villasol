@@ -1,6 +1,6 @@
 <template>
   <div :class="`theme-main-menu sticky-menu theme-menu-two ${isSticky ? 'fixed' : ''}`">
-    <div class="d-flex align-items-center justify-content-center">
+    <div class="d-flex align-items-center justify-content-center ">
       <div class="logo">
         <router-link to="/">
           <img src="../../assets/images/logosy/logo_small.svg" alt="">
@@ -19,27 +19,6 @@
               <NavMenu />
               <!-- nav menu end -->
 
-              <ul class="left-widget">
-                <li class="d-sm-flex">
-                  <ul class="language-button-group d-flex align-items-center justify-content-center">
-                    <li>
-                      <!-- <a href="#" class="eng-lang active">PL. </a> -->
-                    </li>
-                    <li>
-                      <!-- <a href="#" class="ru-lang">ENG.</a> -->
-                    </li>
-                  </ul>
-
-                  <!-- <ul class="user-login-button d-flex align-items-center justify-content-center">
-                    <li>
-                      <router-link to="/login" class="signIn-action">Login</router-link>
-                    </li>
-                    <li>
-                      <router-link to="/register" class="signUp-action">Sign Up</router-link>
-                    </li>
-                  </ul> -->
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -78,3 +57,13 @@ export default {
   },
 }
 </script>
+<style scoped>
+@media only screen and (max-width: 600px) {
+  .logo {
+    /* display: none; */
+  /* border: 3px solid #73AD21; */
+}
+
+
+}
+</style>

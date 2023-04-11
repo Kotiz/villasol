@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-us-light pt-180 pb-200 md-pt-90 md-pb-80" id="Contact">
+  <div class="contact-us-light pt-180 pb-200 md-pt-10 md-pb-80" id="Contact">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-4 col-sm-6">

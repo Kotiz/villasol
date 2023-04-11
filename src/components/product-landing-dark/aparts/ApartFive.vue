@@ -1,11 +1,16 @@
 <template>
-  <div class="client-feedback-slider-five pt-100 md-pt-50 " id="about us" >
+  <div class="client-feedback-slider-five mt-40 pt-100 md-pt-50 " id="" >
     <div class="container" >
       <div class="row" >
         <div class="col-xl-7 col-lg-10 col-md-9 m-auto" >
             <HeaderText :nameOfAparts="titleHeader"
                         :textNumberOfApart="textNumberApart"
             />
+            <div class="title-style-six text-center mt-45" >
+            <div class="mt-40" style="text-align:justify; line-height: 2">
+            <p>{{ $t("apartmentOneDescription") }}</p>
+          </div>
+        </div>
           <!-- /.title-style-six -->
         </div>
         
@@ -49,7 +54,7 @@
 <script>
 import { ref, onMounted } from "vue";
 import axios from "axios";
-import HeaderText from "@/components/common/TextHeaders/HeaderTextOfComponent.vue";
+import HeaderText from "@/components/common/HeaderTextOfComponent.vue";
 import apartamentOne from '@/mixin/apartamentOne';
 import CarouselApartments from "@/components/common/carouselApartments.vue";
   

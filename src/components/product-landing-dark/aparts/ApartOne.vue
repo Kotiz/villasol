@@ -1,11 +1,16 @@
 <template>
-  <div class="client-feedback-slider-five pt-100 md-pt-50 " id="about us" >
+  <div class="client-feedback-slider-five mt-40 pb-15 pt-100 md-pt-10 md-pb-40" id="" >
     <div class="container" >
       <div class="row" >
         <div class="col-xl-7 col-lg-10 col-md-9 m-auto" >
             <HeaderText :nameOfAparts="titleHeader"
                         :textNumberOfApart="textNumberApart"
             />
+            <div class="title-style-six text-center mt-45" >
+            <div class="mt-40" style="text-align:justify; line-height: 2">
+            <p>{{ $t("apartmentOneDescription") }}</p>
+          </div>
+        </div>
           <!-- /.title-style-six -->
         </div>
       </div>
@@ -14,8 +19,18 @@
       <div>{{ apartmentOne.attributes.description }}</div>
     </div>
   </div>
+<!--Feature apart icon-->
+<FeatureApartIcon 
+  :apartOneGuestnumber="apartOneGuestnumber"
+  :apartOneGuestSize="apartOneGuestSize"
+  :apartOneGuestBedroomQuantity="apartOneGuestBedroomQuantity"
+  :apartOneGuestSofaQuantity="apartOneGuestSofaQuantity"
+  :apartamentOneBedQuantity="apartamentOneBedQuantity"
+/>
+<!--End of feature apart icon-->
+<ApartFacilitiesList />
 
-            <!-- Carusell  -->
+<!-- Carusell  -->
 <div  id="carouselExampleControls" class="carousel slide col-xl-7 col-lg-10 m-auto " data-bs-ride="carousel">
   <div class="carousel-inner ">
     <div v-for="(picture, pictureIndex) in portfolioItems" 
@@ -39,47 +54,36 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-
   </div>
-      <!-- <div class="circle-area">
-        <img src="../../../assets/images/shape/155.svg" alt="" class="main-img" />
-      </div> -->
-  </div>
+</div>
 </template>
   
 <script>
 import { ref, onMounted } from "vue";
 import axios from "axios";
-import HeaderText from "@/components/common/TextHeaders/HeaderTextOfComponent.vue";
+import HeaderText from "@/components/common/HeaderTextOfComponent.vue";
 import apartamentOne from '@/mixin/apartamentOne';
+import FeatureApartIcon from "@/components/common/FeatureApartIcon.vue";
+import ApartFacilitiesList from "@/components/common/ApartFacilitiesList.vue";
+
+
   
   export default {
-    name: "AboutUs",
-    // data() {
-    //   return {
-    //     testimonialData: [
-    //       {
-    //         id: 1,
-    //         name: "Villa Sol",
-    //         title: "",
-    //         desc: "Budynek został całkowicie odnowiony i przebudowany w roku 2022/2023. Usytuowany jest na osiedlu 'Zasole' niedaleko dworca PKP, przy spokojnej ulicy osiedlowej. Z naszego apartamentu wszędzie jest blisko nawet na pieszo. Na oświęcimski rynek spacerem dojdziemy w 10-15 minut a do muzeum Birkenau które jest najdalej zajmie nam to spacerem ok 20 minut. W bliskości mamy sklepy, markety, przystanki komunikacji zbiorczej. W niedalekiej odległości ok 5-10 minut pieszo znajduje się duży park miejski na którym znajdziemy także plac zabaw dla dzieci.  ",
-    //       },
-    //       {
-    //         id: 2,
-    //         name: "Villa Sol",
-    //         title: "Developer",
-    //         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-    //       },
-    //     ],
-    //   };
-    // },
+    name: "ApartOne",
     components: {
     HeaderText,
+    FeatureApartIcon,
+    ApartFacilitiesList,
 },
     mixins:[apartamentOne],
     setup() {
       const titleHeader = 'Apartament';
       const textNumberApart = 'ONE';
+      const apartOneGuestnumber = '4';
+      const apartOneGuestSize="45";
+      const apartOneGuestBedroomQuantity="1";
+      const apartOneGuestSofaQuantity="1";
+      const apartamentOneBedQuantity="1";
       const apartmentOne = ref([]);
       onMounted(async () => {
         axios.get("http://localhost:1337/api/apartments/1?populate=*").then((response) => apartmentOne.value = response.data.data);
@@ -89,9 +93,16 @@ import apartamentOne from '@/mixin/apartamentOne';
         apartmentOne,
         titleHeader,
         textNumberApart,
+        apartOneGuestnumber,
+        apartOneGuestSize,
+        apartOneGuestBedroomQuantity,
+        apartOneGuestSofaQuantity,
+        apartamentOneBedQuantity,
 
       };
     },
   };
   </script>
+
+
   

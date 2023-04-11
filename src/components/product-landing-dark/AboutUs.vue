@@ -1,17 +1,49 @@
 <template>
-  <div class="client-feedback-slider-five pt-70 md-pt-50 " id="AboutUs" >
-    <div class="container" >
+  <div class="pt-120 pb-110 md-pt-10 client-feedback-slider-five"  >
+    <div class="container" id="AboutUs" >
       <div class="row" >
         <div class="col-xl-7 col-lg-10 col-md-9 m-auto" >
           <div class="title-style-six text-center mt-25" >
-            <!-- <h2>Kilka <span> słów </span>o nas {{ t('header') }}</h2> -->
             <h2>{{ $t("header") }}</h2>
-            <div class="mt-40" style="text-align:justify; line-height: 2.5">
-            <p>{{ $t("description") }}</p>
-          </div>
+            <div class="mt-40" style="text-align:justify; line-height: 2">
+              <p>{{ $t("description") }}</p>
+            </div>
           </div>
           <!-- /.title-style-six -->
         </div>
+  <!-- KARUZELA -->
+  <div  id="carouselExampleControls" 
+        class="carousel slide col-xl-8 col-lg-8 borderIMG m-auto" 
+        data-bs-ride="carousel">
+    <div class="carousel-inner ">
+      <div v-for="(picture, pictureIndex) in apartMainHomeItems" 
+        :key="pictureIndex" 
+        :class="pictureIndex === 0 ? 'carousel-item active' : 'carousel-item'"
+      >
+        <img 
+          :src="picture.img" 
+          class="d-block w-100 " 
+          alt="..." 
+          style="border-radius: 9px; "
+        >
+      </div>
+    </div>
+      <button class="carousel-control-prev" 
+              type="button" 
+              data-bs-target="#carouselExampleControls" 
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" 
+              type="button" 
+              data-bs-target="#carouselExampleControls" 
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+  <!-- END OF CAROUSEL-->
       </div>
       <div v-if="useAboutUses && useAboutUses.attributes " class="row pt-100">
         <div class="col-xl-7 col-lg-10 m-auto">
@@ -32,9 +64,11 @@
 <script>
 import { ref, onMounted } from "vue";
 import axios from "axios";
+import apartamentMainHome from "@/mixin/apartamentMainHome"
 
 export default {
   name: "AboutUs",
+  mixins:[apartamentMainHome],
   setup() {
     const useAboutUses = ref([]);
     console.log("obiekt nr 2",useAboutUses);
@@ -48,15 +82,18 @@ export default {
   },
 };
 </script>
-<!-- <i18n>
-  {
-    "en": {
-      "header": "About us",
-      "description": "The our Villa Sol was fully renovated and rebuilt in year 2022/2023.Established on estate Zasole near the PKP station, by peaceful estate street. From our Apartament everything is close even while walking. It takes about 10-15 minutes Oświęcim market when taking a walk and to museum  Birkenau which is the farthest attraction out there about 20 minutes. In close proximity there are shops , markets and public transport stops. Theres also a big public park with a place for kids which takes only 5-10 minutes to get there.",
-    },
-    "pl": {
-      "header": "Kilka słów o nas",
-      "description": "Budynek został całkowicie odnowiony i przebudowany w roku 2022/2023. Usytuowany jest na osiedlu 'Zasole' niedaleko dworca PKP, przy spokojnej ulicy osiedlowej. Z naszego apartamentu wszędzie jest blisko nawet na pieszo. Na oświęcimski rynek spacerem dojdziemy w 10-15 minut a do muzeum Birkenau które jest najdalej zajmie nam to spacerem ok 20 minut. W bliskości mamy sklepy, markety, przystanki komunikacji zbiorczej. W niedalekiej odległości ok 5-10 minut pieszo znajduje się duży park miejski na którym znajdziemy także plac zabaw dla dzieci."
-    }
-  }
-</i18n> -->
+<style scoped>
+@media only screen and (max-width: 600px) {
+  .mt-40 {
+  position: relative;
+  line-height: 1.5;
+  font-size: smaller;
+  /* margin-left: -40%; */
+  /* margin-top: 10%; */
+  /* width: 200px; */
+  /* height: 120px; */
+  /* border: 3px solid #73AD21; */
+}
+
+}</style>
+
